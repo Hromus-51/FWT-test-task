@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const InfoTable = styled.div`
     width: 100%;
@@ -45,7 +46,7 @@ export const Tablet = styled.div`
     }
 `;
 
-export const Image = styled.img`
+export const Image = styled(LazyLoadImage)`
     width: 100%;
     height: 100%;
 
