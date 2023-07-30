@@ -38,4 +38,4 @@ export const CrossIcon = styled(motion.div)`
     cursor: pointer;
 
     color: var(--color-text);
-`;
+`

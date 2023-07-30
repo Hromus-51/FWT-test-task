@@ -19,4 +19,4 @@ export const Item = styled.li`
             transition: all 0.15s ease 0s;
         }
     }
-`;
+`

@@ -55,8 +55,6 @@ export const Paginate = styled(PagComponent)`
         &:hover {
             background-color: var(--bg-inverse);
         }
-
-        //123
     }
 
     //disabled

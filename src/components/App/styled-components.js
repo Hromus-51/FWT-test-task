@@ -14,7 +14,7 @@ export const Container = styled.div`
     @media(min-width: 1024px) {
         padding: 0px 42px;
     }
-`
+`;
 
 export const Wrapper = styled.div`
     height: 100vh;
@@ -28,4 +28,5 @@ export const Wrapper = styled.div`
         padding-top: 35px;
     }
 `;
+
 

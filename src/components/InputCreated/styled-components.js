@@ -51,4 +51,4 @@ export const Line = styled.div`
 `;
 
 export const Before = styled(From)`
-`;
+`
