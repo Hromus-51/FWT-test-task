@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FWT-test-task/static/css/main.884d5ccd.css",
-    "main.js": "/FWT-test-task/static/js/main.637babd4.js",
+    "main.js": "/FWT-test-task/static/js/main.12dfc1db.js",
     "static/media/sun.svg": "/FWT-test-task/static/media/sun.ddb7f429614c727b6597feffa3d1126e.svg",
     "static/media/logo.svg": "/FWT-test-task/static/media/logo.341392e0c316e17646ddea30081fb065.svg",
     "static/media/cross.svg": "/FWT-test-task/static/media/cross.5a0885f0c595577e8c13156ef7548f5c.svg",
@@ -12,10 +12,10 @@
     "static/media/next.svg": "/FWT-test-task/static/media/next.156efa0706e6157bf4187e33465459d1.svg",
     "static/media/arrow.svg": "/FWT-test-task/static/media/arrow.277086f34099e68b9c18f77954334c56.svg",
     "main.884d5ccd.css.map": "/FWT-test-task/static/css/main.884d5ccd.css.map",
-    "main.637babd4.js.map": "/FWT-test-task/static/js/main.637babd4.js.map"
+    "main.12dfc1db.js.map": "/FWT-test-task/static/js/main.12dfc1db.js.map"
   },
   "entrypoints": [
     "static/css/main.884d5ccd.css",
-    "static/js/main.637babd4.js"
+    "static/js/main.12dfc1db.js"
   ]
 }
