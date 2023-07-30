@@ -48,7 +48,7 @@ export const Paginate = styled(PagComponent)`
     }
 
     //selected
-    & .css-1xr9krm.Mui-selected {
+    & .Mui-selected {
         background: var(--bg-inverse);
         color: var(--color-text-inverse);
 
