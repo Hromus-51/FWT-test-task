@@ -24,7 +24,7 @@ export const Paginate = styled(PagComponent)`
     }
 
     //root
-    & .MuiButtonBase-root {
+    & .css-1xr9krm.Mui-selected {
         width: 41px;
         height: 41px;
 
