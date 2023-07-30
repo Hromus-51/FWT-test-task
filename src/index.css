@@ -1,13 +1,70 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    /* Typography */
+    --family-ss: 'Roboto', sans-serif;
+
+    /* Font size*/
+    --fs-large: 18px;
+    --lh-large: 20px;
+
+    --fs-medium: 16px;
+    --lh-medium: 20px;
+
+    --fs-small: 13px;
+    --lh-small: 20px;
+
+    /* Font weight */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+    /* Radius */
+    --bdrr: 8px;
+
+    /* Colors */
+    --thumb: #7B7B7B;
+    --input-color-text: #000000;
+    --input-placeholder: rgba(0, 0, 0, 0.30);
+    --bg-info-tablet: rgba(255, 255, 255, 0.75);
+    --info-tabler-color: #000000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Dark-theme */
+body[data-theme='dark'] {
+    --color-text: #FFFFFF;
+    --color-text-inverse: #000000;
+    --placeholder: rgba(255, 255, 255, 0.30);
+    --line: #FFFFFF;
+    --bg: #000000;
+    --bg-inverse: #FFFFFF;
+    --input-bg: #FFFFFF;
+    --pagination-disabled: rgba(255, 255, 255, 0.30);
+    --pagination-hover-bg: #464646;
+    --skeleton-bg: #2b2b2b;
+    --skeleton-line: #202020;
+}
+
+/* Light-theme */
+body[data-theme='light'] {
+    --color-text: #000000;
+    --color-text-inverse: #FFFFFF;
+    --placeholder: rgba(0, 0, 0, 0.30);
+    --line: rgba(0, 0, 0, 0.30);
+    --bg: #FFFFFF;
+    --bg-inverse: #000000;
+    --input-bg: #EFEFEF;
+    --pagination-disabled: rgba(0, 0, 0, 0.30);
+    --pagination-hover-bg: #EDEDED;
+    --skeleton-bg: #f3f3f3;
+    --skeleton-line: #ecebeb;
+}
+
+body {
+    font-family: var(--family-ss);
+    color: var(--color-text);
+    font-weight: var(--fw-regular);
+    background-color: var(--bg);
 }
