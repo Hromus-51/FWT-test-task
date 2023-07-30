@@ -48,13 +48,15 @@ export const Paginate = styled(PagComponent)`
     }
 
     //selected
-    & .css-1xr9krm.Mui-selected {
-        background: var(--bg-inverse);
+    & .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+        background-color: var(--bg-inverse);
         color: var(--color-text-inverse);
 
         &:hover {
-            background: var(--bg-inverse);
+            background-color: var(--bg-inverse);
         }
+
+        //123
     }
 
     //disabled
