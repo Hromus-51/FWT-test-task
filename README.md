@@ -22,7 +22,7 @@
 
 ### Links
 
-- [Live Site](https://hromus-51.github.io/planets-fact-site/)
+- [Live Site](https://hromus-51.github.io/FWT-test-task/)
 
 ### Built with
 
