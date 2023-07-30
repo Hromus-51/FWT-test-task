@@ -47,6 +47,11 @@ export const Paginate = styled(PagComponent)`
         transition: all 0.15s ease 0s;
     }
 
+    & .Mui-selected {
+        background-color: #4caf50;
+        color: white;
+    }
+
     //selected
     /* & .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
         background-color: var(--bg-inverse);
