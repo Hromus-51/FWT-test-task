@@ -47,20 +47,15 @@ export const Paginate = styled(PagComponent)`
         transition: all 0.15s ease 0s;
     }
 
-    & .Mui-selected {
-        background-color: #4caf50;
-        color: red;
-    }
-
     //selected
-    /* & .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
-        background-color: var(--bg-inverse);
+    & .Mui-selected{
+        background-color: var(--bg-inverse) !important;
         color: var(--color-text-inverse);
 
         &:hover {
             background-color: var(--bg-inverse);
         }
-    } */
+    }
 
     //disabled
     & .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-disabled {
