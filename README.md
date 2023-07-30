@@ -26,7 +26,7 @@
 
 ### Built with
 
-- [JS]
+- JS
 - [React](https://reactjs.org/) 
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [Styled Components](https://styled-components.com/)
