@@ -5,7 +5,7 @@ import CustomSelect from '../CustomSelect/CustomSelect';
 //========================================
 import { useAppDispatch } from '../../redux/store';
 import { fetchLocations } from '../../redux/locationSlice/asyncActions';
-import { setLocation, selectLocation } from '../../redux/filterSlice/slice';
+import { setLocation, selectLocation, setPage } from '../../redux/filterSlice/slice';
 import { selectLocations, selectStatus } from '../../redux/locationSlice/locationSlice';
 //========================================
 import { url } from '../../assets/url';
@@ -24,11 +24,13 @@ function SelectLocation() {
 
     const handleChange = (value) => {
         dispatch(setLocation(value));
+        dispatch(setPage(1));
     }
 
     const resetValue = (e) => {
         e.stopPropagation();
         dispatch(setLocation({}));
+        dispatch(setPage(1));
     }
 
     return (

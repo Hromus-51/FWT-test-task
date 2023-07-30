@@ -5,7 +5,7 @@ import debounce from 'lodash.debounce';
 //========================================
 import { Wrapper, Input, CrossIcon } from './styled-components';
 //========================================
-import { setName } from '../../redux/filterSlice/slice';
+import { setName, setPage } from '../../redux/filterSlice/slice';
 //========================================
 import { ReactComponent as Cross } from '../../assets/images/cross.svg';
 
@@ -23,6 +23,7 @@ function InputName() {
     const setNameValue = useCallback(
         debounce((value) => {
             dispatch(setName(value));
+            dispatch(setPage(1));
         }, 500),
         []
     )
@@ -35,6 +36,7 @@ function InputName() {
     const resetValue = () => {
         setInputValue('');
         dispatch(setName(''));
+        dispatch(setPage(1));
     }
 
     return (

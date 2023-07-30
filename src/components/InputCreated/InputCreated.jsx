@@ -12,7 +12,7 @@ import {
     Line, Before
 } from './styled-components'
 //========================================
-import { setCreated, selectCreated } from '../../redux/filterSlice/slice';
+import { setCreated, selectCreated, setPage } from '../../redux/filterSlice/slice';
 //========================================
 import { ReactComponent as Arrow } from '../../assets/images/arrow.svg';
 import { ReactComponent as Cross } from '../../assets/images/cross.svg';
@@ -56,6 +56,7 @@ function InputCreated() {
     const setCreatedValue = useCallback(
         debounce((obj) => {
             dispatch(setCreated(obj));
+            dispatch(setPage(1));
         }, 500),
         []
     )
@@ -73,6 +74,7 @@ function InputCreated() {
         const cleanData = { from: '', before: '' };
         setInputsValue(cleanData);
         dispatch(setCreated(cleanData));
+        dispatch(setPage(1));
     }
 
     return (

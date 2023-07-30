@@ -5,7 +5,7 @@ import CustomSelect from '../CustomSelect/CustomSelect';
 //========================================
 import { useAppDispatch } from '../../redux/store';
 import { fetchAuthors } from '../../redux/authorSlice/asyncActions';
-import { setAuthor, selectAuthor } from '../../redux/filterSlice/slice';
+import { setAuthor, selectAuthor, setPage } from '../../redux/filterSlice/slice';
 import { selectAuthors, selectStatus } from '../../redux/authorSlice/authorSlice';
 //========================================
 import { url } from '../../assets/url';
@@ -24,11 +24,13 @@ function SelectAuthor() {
 
     const handleChange = (value) => {
         dispatch(setAuthor(value));
+        dispatch(setPage(1));
     }
 
     const resetValue = (e) => {
         e.stopPropagation();
         dispatch(setAuthor({}));
+        dispatch(setPage(1));
     }
 
     return (
