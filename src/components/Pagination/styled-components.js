@@ -48,14 +48,14 @@ export const Paginate = styled(PagComponent)`
     }
 
     //selected
-    & .MuiPagination-ul .Mui-selected{
-        background-color: red;
-        /* color: var(--color-text-inverse);
+    /* & .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+        background-color: var(--bg-inverse);
+        color: var(--color-text-inverse);
 
         &:hover {
             background-color: var(--bg-inverse);
-        } */
-    }
+        }
+    } */
 
     //disabled
     & .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-disabled {
