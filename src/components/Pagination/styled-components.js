@@ -48,12 +48,12 @@ export const Paginate = styled(PagComponent)`
     }
 
     //selected
-    & .Mui-selected {
-        background: var(--bg-inverse);
+   & .Mui-selected {
+        background-color: var(--bg-inverse);
         color: var(--color-text-inverse);
 
         &:hover {
-            background: var(--bg-inverse);
+            background-color: var(--bg-inverse);
         }
     }
 
