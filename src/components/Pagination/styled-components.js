@@ -49,7 +49,7 @@ export const Paginate = styled(PagComponent)`
 
     & .MuiPagination-ul .MuiButtonBase-root .Mui-selected {
         background-color: #4caf50;
-        color: white;
+        color: red;
     }
 
     //selected
