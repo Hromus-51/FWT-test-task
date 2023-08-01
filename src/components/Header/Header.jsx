@@ -1,12 +1,10 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 //========================================
-import { HeaderElement, ThemeButton } from './styled-components';
+import { HeaderElement, LogoIcon, SunIcon } from './styled-components';
 //========================================
 import { setTheme, selectTheme } from '../../redux/themeSlice/slice';
 //========================================
-import logo from '../../assets/images/logo.svg';
-import { ReactComponent as Sun } from '../../assets/images/sun.svg';
 
 function Header() {
     const dispatch = useDispatch();
@@ -19,15 +17,13 @@ function Header() {
     return (
         <HeaderElement>
 
-            <img src={logo} alt='logo' />
+            <LogoIcon />
 
-            <ThemeButton
+            <SunIcon
                 onClick={() => {
                     dispatch(setTheme(theme === 'light' ? 'dark' : 'light'))
                 }}
-            >
-                <Sun />
-            </ThemeButton>
+            />
 
         </HeaderElement>
     );

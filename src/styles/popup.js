@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { ReactComponent as Cross } from '../assets/images/cross.svg';
+import { ReactComponent as Arrow } from '../assets/images/arrow.svg';
 
 export const Wrapper = styled.div`
     position: relative;
@@ -56,19 +58,19 @@ export const Icons = styled.div`
     column-gap: 10px;
 `;
 
-export const CrossIcon = styled(motion.div)`
-    color: var(--color-text);
+export const CrossIcon = styled(motion(Cross))`
+    fill: var(--color-text);
 `;
 
-export const ArrowIcon = styled.div`
-    display: flex;
-    align-items: center;
-
-    color: var(--color-text);
-
+export const ArrowIcon = styled(Arrow)`
+    fill: var(--color-text);
+    
     transform: rotate(${props => props.visibility === 'true' ? '180deg' : '0'});
     transition: transform 0.2s ease 0s;
 `;
+
+
+
 
 
 

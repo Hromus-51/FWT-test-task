@@ -8,8 +8,6 @@ import {
 } from '../../styles/popup';
 import { ListWrapper, List } from './styled-components';
 //========================================
-import { ReactComponent as Arrow } from '../../assets/images/arrow.svg';
-import { ReactComponent as Cross } from '../../assets/images/cross.svg';
 
 const listAnimation = {
     initial: { height: 0 },
@@ -68,16 +66,15 @@ function CustomSelect(props) {
                         <Icons>
                             <AnimatePresence>
                                 {value !== undefined &&
-                                    <CrossIcon {...crossAnimation}
+                                    <CrossIcon
+                                        {...crossAnimation}
                                         onClick={(e) => { clearValue(e) }}
-                                    >
-                                        <Cross />
-                                    </CrossIcon>
+                                    />
                                 }
                             </AnimatePresence>
-                            <ArrowIcon visibility={String(isVisible)}>
-                                <Arrow />
-                            </ArrowIcon>
+                            <ArrowIcon
+                                visibility={String(isVisible)}
+                            />
                         </Icons>
                     }
                 </Title>
